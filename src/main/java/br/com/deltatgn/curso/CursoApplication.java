@@ -28,6 +28,7 @@ public class CursoApplication {
 
 	@GetMapping("/")
 	public String hello() {
+		/*development*/
 		return applicationAlias + " --->>> " + applicationName + " --->>> " + applicationVersion;
 	}
 	

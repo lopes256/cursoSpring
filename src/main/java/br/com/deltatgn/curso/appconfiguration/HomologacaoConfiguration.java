@@ -6,13 +6,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile("development")
-public class DevelopmentConfiguration {
-	
+@Profile("homologacao")
+public class HomologacaoConfiguration {
+
 	@Bean
 	public CommandLineRunner executar() {
 		return args -> {
-			System.out.println("RODANDO A CONFIGURAÇÃO DE DESENVOLVIMENTO");
+			System.out.println("RODANDO A CONFIGURAÇÃO DE HOMOLOGAÇÃO");
 		};
 	}
 }
